@@ -3,7 +3,6 @@ if (!process.env.BOT_TOKEN) {
   process.exit(1);
 }
 const Telegraf = require('telegraf');
-const session = require('telegraf/session');
 const request = require('request');
 const cheerio = require('cheerio');
 
@@ -30,14 +29,6 @@ const transform = (html) => {
 };
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
-bot.use(session());
-bot.use((ctx, next) => {
-  const start = new Date();
-  return next().then(() => {
-    const ms = new Date() - start;
-    console.log('response time %sms', ms);
-  });
-});
 
 bot.start(ctx => ctx.reply('Tere tulemast!'));
 bot.on('message', async (ctx) => {
