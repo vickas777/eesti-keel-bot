@@ -1,1 +1,1 @@
-# eesti-keel-bot
+## Telegram bot for studying estonian language

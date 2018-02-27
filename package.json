@@ -1,0 +1,32 @@
+{
+  "name": "telegram-estonian-bot",
+  "version": "0.0.1",
+  "description": "Bot for estonian language",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vickas777/eesti-keel-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vickas777/eesti-keel-bot/issues"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vickas777@gmail.com <Bohdan Keller>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.83.0",
+    "telegraf": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
